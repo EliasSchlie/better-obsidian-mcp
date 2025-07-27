@@ -1,4 +1,4 @@
-.*.DS_Store
+*.DS_Store
 *__pycache__/
 *.pyc
 .env
@@ -8,4 +8,4 @@
 mlruns
 mlruns/*
 
-better_obsidian_mcp_test_vault/
+better_obsidian_mcp_test_vault/.DS_Store
