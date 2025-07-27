@@ -1,7 +1,6 @@
 import os
 
-def example_outer(*args, **kwargs):
-    VAULT_DIRECTORY = kwargs["vault_directory"]
+def example_outer_(*args, **kwargs): # Remove the last _ to make it be picked up by the server
 
     def example() -> str:
         """
