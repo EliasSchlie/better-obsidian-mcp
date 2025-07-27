@@ -1,9 +1,12 @@
-def test_outer(*args, **kwargs):
-    def test(name: str):
-        return f"test {name}"
-    return test, "file://test/{name}"
+import os
 
-def test2_outer(*args, **kwargs):
-    def test2():
-        return f"test2 inner text hi"
-    return test2, "file://test2/"
+def example_outer(*args, **kwargs):
+    VAULT_DIRECTORY = kwargs["vault_directory"]
+
+    def example() -> str:
+        """
+        Read the example from the vault.
+        """
+        return "example"
+    
+    return example, "file://example/"
